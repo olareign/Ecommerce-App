@@ -34,8 +34,8 @@ export default function Home() {
       />
       <ListPageLayout 
         headerContent="Top"
-        isCategoryPage={true}
-        isBrandPage={false}
+        isCategoryPage={false}
+        isBrandPage={true}
       />
     </main>
     <Footer/>

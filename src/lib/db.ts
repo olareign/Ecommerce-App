@@ -1,4 +1,4 @@
-import { ICategoryType, IProductDBType } from "@/types/product.types";
+import { IBrandType, ICategoryType, IProductDBType } from "@/types/product.types";
 
 export const products: IProductDBType = {
   "Mobile": [
@@ -445,7 +445,6 @@ export const products: IProductDBType = {
   ]
 };
 
-
 export const categories: ICategoryType[] = [
     {
         id:1,
@@ -499,3 +498,222 @@ export const categories: ICategoryType[] = [
     }
 ];
 
+
+export const brands: IBrandType = {
+    "Mobiles": [
+        {
+            id: 1,
+            name: 'IPHONE',
+            discount: 'UP to 80% OFF',
+            bgColor: 'bg-gradient-to-r from-gray-800 to-gray-900',
+            textColor: 'text-white',
+            logoBackground: 'bg-white',
+            logoText: '🍎',
+            phoneColor: 'from-blue-400 to-blue-600'
+        },
+        {
+            id: 2,
+            name: 'REALME',
+            discount: 'UP to 80% OFF',
+            bgColor: 'bg-gradient-to-r from-yellow-200 to-yellow-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-yellow-400',
+            logoText: 'realme',
+            phoneColor: 'from-green-400 to-green-600'
+        },
+        {
+            id: 3,
+            name: 'XIAOMI',
+            discount: 'UP to 80% OFF',
+            bgColor: 'bg-gradient-to-r from-orange-200 to-orange-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-orange-500',
+            logoText: 'mi',
+            phoneColor: 'from-blue-400 to-blue-600'
+        },
+        {
+            id: 4,
+            name: 'SAMSUNG',
+            discount: 'UP to 70% OFF',
+            bgColor: 'bg-gradient-to-r from-gray-800 to-gray-900',
+            textColor: 'text-white',
+            logoBackground: 'bg-white',
+            logoText: 'SAMSUNG',
+            phoneColor: 'from-purple-400 to-purple-600'
+        },
+        {
+            id: 5,
+            name: 'ONEPLUS',
+            discount: 'UP to 60% OFF',
+            bgColor: 'bg-gradient-to-r from-red-200 to-red-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-red-400',
+            logoText: '1PLUS',
+            phoneColor: 'from-yellow-400 to-yellow-600'
+        },
+        {
+            id: 6,
+            name: 'VIVO',
+            discount: 'UP to 50% OFF',
+            bgColor: 'bg-gradient-to-r from-blue-200 to-blue-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-blue-500',
+            logoText: 'VIVO',
+            phoneColor: 'from-pink-400 to-pink-600'
+        },
+        {
+            id: 7,
+            name: 'OPPO',
+            discount: 'UP to 40% OFF',
+            bgColor: 'bg-gradient-to-r from-green-200 to-green-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-green-400',
+            logoText: 'OPPO',
+            phoneColor: 'from-teal-400 to-teal-600'
+        },
+        {
+            id: 8,
+            name: 'MOTOROLA',
+            discount: 'UP to 30% OFF',
+            bgColor: 'bg-gradient-to-r from-purple-200 to-purple-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-purple-400',
+            logoText: 'MOTOROLA',
+            phoneColor: 'from-indigo-400 to-indigo-600'
+        },
+        {
+            id: 9,
+            name: 'NOKIA',
+            discount: 'UP to 20% OFF',
+            bgColor: 'bg-gradient-to-r from-pink-200 to-pink-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-pink-500',
+            logoText: 'NOKIA',
+            phoneColor: 'from-red-400 to-red-600'
+        }
+    ],
+    "Fashion": [
+        {
+            id: 10,
+            name: 'ZARA',
+            discount: 'UP to 70% OFF',
+            bgColor: 'bg-gradient-to-r from-gray-800 to-gray-900',
+            textColor: 'text-white',
+            logoBackground: 'bg-white',
+            logoText: 'ZARA',
+            phoneColor: 'from-pink-400 to-pink-600'
+        },
+        {
+            id: 11,
+            name: 'H&M',
+            discount: 'UP to 60% OFF',
+            bgColor: 'bg-gradient-to-r from-green-200 to-green-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-green-400',
+            logoText: 'H&M',
+            phoneColor: 'from-yellow-400 to-yellow-600'
+        },
+        {
+            id: 12,
+            name: 'LEVIS',
+            discount: 'UP to 50% OFF',
+            bgColor: 'bg-gradient-to-r from-blue-200 to-blue-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-blue-500',
+            logoText: 'LEVIS',
+            phoneColor: 'from-red-400 to-red-600'
+        },
+        {
+            id: 13,
+            name: 'NIKE',
+            discount: 'UP to 45% OFF',
+            bgColor: 'bg-gradient-to-r from-orange-200 to-orange-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-orange-500',
+            logoText: 'NIKE',
+            phoneColor: 'from-green-400 to-green-600'
+        },
+        {
+            id: 14,
+            name: 'ADIDAS',
+            discount: 'UP to 40% OFF',
+            bgColor: 'bg-gradient-to-r from-purple-200 to-purple-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-purple-400',
+            logoText: 'ADIDAS',
+            phoneColor: 'from-blue-400 to-blue-600'
+        },
+        {
+            id: 15,
+            name: 'PUMA',
+            discount: 'UP to 35% OFF',
+            bgColor: 'bg-gradient-to-r from-red-200 to-red-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-red-400',
+            logoText: 'PUMA',
+            phoneColor: 'from-purple-400 to-purple-600'
+        }
+    ],
+    "Electronics": [
+        {
+            id: 16,
+            name: 'SAMSUNG',
+            discount: 'UP to 40% OFF',
+            bgColor: 'bg-gradient-to-r from-gray-800 to-gray-900',
+            textColor: 'text-white',
+            logoBackground: 'bg-white',
+            logoText: 'SAMSUNG',
+            phoneColor: 'from-purple-400 to-purple-600'
+        },
+        {
+            id: 17,
+            name: 'SONY',
+            discount: 'UP to 30% OFF',
+            bgColor: 'bg-gradient-to-r from-purple-200 to-purple-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-purple-400',
+            logoText: 'SONY',
+            phoneColor: 'from-indigo-400 to-indigo-600'
+        },
+        {
+            id: 18,
+            name: 'LG',
+            discount: 'UP to 20% OFF',
+            bgColor: 'bg-gradient-to-r from-pink-200 to-pink-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-pink-500',
+            logoText: 'LG',
+            phoneColor: 'from-teal-400 to-teal-600'
+        },
+        {
+            id: 19,
+            name: 'DELL',
+            discount: 'UP to 35% OFF',
+            bgColor: 'bg-gradient-to-r from-blue-200 to-blue-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-blue-500',
+            logoText: 'DELL',
+            phoneColor: 'from-green-400 to-green-600'
+        },
+        {
+            id: 20,
+            name: 'HP',
+            discount: 'UP to 25% OFF',
+            bgColor: 'bg-gradient-to-r from-green-200 to-green-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-green-400',
+            logoText: 'HP',
+            phoneColor: 'from-yellow-400 to-yellow-600'
+        },
+        {
+            id: 21,
+            name: 'APPLE',
+            discount: 'UP to 15% OFF',
+            bgColor: 'bg-gradient-to-r from-yellow-200 to-yellow-300',
+            textColor: 'text-gray-800',
+            logoBackground: 'bg-yellow-400',
+            logoText: '🍎',
+            phoneColor: 'from-red-400 to-red-600'
+        }
+    ]
+};

@@ -11,28 +11,19 @@ export default function BrandCard({ brand }: { brand: any }) {
         {/* Left Side - Brand Logo & Text */}
         <div className="space-y-4 flex-1">
           {/* Brand Logo */}
-          <div className={`inline-flex items-center justify-center w-16 h-16 ${brand.logoBackground} rounded-xl shadow-lg`}>
-            {brand.name === 'IPHONE' && (
-              <span className="text-2xl">🍎</span>
-            )}
-            {brand.name === 'REALME' && (
-              <span className="text-white font-bold text-sm">realme</span>
-            )}
-            {brand.name === 'XIAOMI' && (
-              <span className="text-white font-bold text-lg">mi</span>
-            )}
+          <div className={`inline-flex items-center justify-center w-16 h-16 ${brand.logoBackground} rounded-xl shadow-lg overflow-clip`}>
+            <span className={`${brand.logoBackground} font-bold text-sm`}>{brand.logoText}</span>
           </div>
-
           {/* Discount Text */}
           <h3 className={`${brand.textColor} text-xl font-bold leading-tight`}>
             {brand.discount}
           </h3>
         </div>
 
-        {/* Right Side - Phone Mockup */}
+        {/* Right Side - Brand Mockup */}
         <div className="flex-shrink-0 ml-6">
           <div className="relative">
-            {/* Phone Device */}
+            {/* Brand Image */}
             <div className="w-24 h-40 bg-gray-800 rounded-xl shadow-2xl relative overflow-hidden border-2 border-gray-700">
               {/* Screen */}
               <div className={`absolute inset-2 bg-gradient-to-br ${brand.phoneColor} rounded-lg overflow-hidden`}>

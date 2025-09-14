@@ -43,7 +43,7 @@ export default function ListPageLayout({ headerContent, isCategoryPage, isBrandP
                     {isCategoryPage ? 
                         <span className="ml-2 text-blue-400 ">Top Categories</span> 
                     : isBrandPage ?
-                        <span className="ml-2 text-blue-400 ">C</span>
+                        <span className="ml-2 text-blue-400 ">Brands</span>
                     :categoryToDisplay && (
                         <span className="ml-2 text-blue-400 ">{categoryToDisplay}</span>
                     )}
@@ -59,7 +59,7 @@ export default function ListPageLayout({ headerContent, isCategoryPage, isBrandP
                 : isBrandPage ?
                 <div className="mt-4 flex flex-row justify-start scroll-auto overflow-x-scroll">
                     {/* Brand List Component can be placed here */}
-                    <BrandListSlider />
+                    <BrandListSlider category="Mobiles"/>
                 </div>
                 :
                 <div className="mt-4 flex flex-row justify-start scroll-auto overflow-x-scroll">
