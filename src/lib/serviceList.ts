@@ -1,5 +1,3 @@
-import { IBrandType } from "@/types/product.types";
-
 export const navItems: Array<string> = [
     "Groceries",
     "Premium Fruits",

@@ -28,15 +28,18 @@ export interface ICategoryType {
     image: string;
 }
 
+export interface IBrand {
+    id: number;
+    name: string;
+    discount: string;
+    bgColor: string;
+    textColor: string;
+    logoBackground: string;
+    logoText: string;
+    phoneColor: string;
+}
+
+
 export interface IBrandType {
-    [category: string]: {
-        id: number;
-        name: string;
-        discount: string;
-        bgColor: string;
-        textColor: string;
-        logoBackground: string;
-        logoText: string;
-        phoneColor: string;
-    }[];
+    [category: string]: IBrand[];
 }

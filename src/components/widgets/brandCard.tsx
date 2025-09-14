@@ -1,4 +1,6 @@
-export default function BrandCard({ brand }: { brand: any }) {
+import { IBrand, IBrandType } from "@/types/product.types";
+
+export default function BrandCard({ brand }: { brand: IBrand }) {
   return (
     <div className="relative bg-black/10 backdrop-blur-sm rounded-xl p-6 hover:bg-black/20 transition-all duration-300">
       {/* Brand Tag */}
