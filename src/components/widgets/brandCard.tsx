@@ -1,4 +1,4 @@
-import { IBrand, IBrandType } from "@/types/product.types";
+import { IBrand } from "@/types/product.types";
 
 export default function BrandCard({ brand }: { brand: IBrand }) {
   return (
@@ -13,8 +13,12 @@ export default function BrandCard({ brand }: { brand: IBrand }) {
         {/* Left Side - Brand Logo & Text */}
         <div className="space-y-4 flex-1">
           {/* Brand Logo */}
-          <div className={`inline-flex items-center justify-center w-16 h-16 ${brand.logoBackground} rounded-xl shadow-lg overflow-clip`}>
-            <span className={`${brand.logoBackground} font-bold text-sm`}>{brand.logoText}</span>
+          <div
+            className={`inline-flex items-center justify-center w-16 h-16 ${brand.logoBackground} rounded-xl shadow-lg overflow-clip`}
+          >
+            <span className={`${brand.logoBackground} font-bold text-sm`}>
+              {brand.logoText}
+            </span>
           </div>
           {/* Discount Text */}
           <h3 className={`${brand.textColor} text-xl font-bold leading-tight`}>
@@ -28,27 +32,34 @@ export default function BrandCard({ brand }: { brand: IBrand }) {
             {/* Brand Image */}
             <div className="w-24 h-40 bg-gray-800 rounded-xl shadow-2xl relative overflow-hidden border-2 border-gray-700">
               {/* Screen */}
-              <div className={`absolute inset-2 bg-gradient-to-br ${brand.phoneColor} rounded-lg overflow-hidden`}>
+              <div
+                className={`absolute inset-2 bg-gradient-to-br ${brand.phoneColor} rounded-lg overflow-hidden`}
+              >
                 {/* Dynamic Notch */}
                 <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-8 h-2 bg-black rounded-b-lg"></div>
-                
+
                 {/* Screen Content - Animated */}
                 <div className="mt-6 px-2 space-y-2">
                   <div className="flex justify-between items-center">
                     <div className="w-3 h-3 bg-white/30 rounded-full animate-pulse"></div>
-                    <div className="text-white text-xs font-bold">{brand.name}</div>
+                    <div className="text-white text-xs font-bold">
+                      {brand.name}
+                    </div>
                   </div>
-                  
+
                   <div className="space-y-1">
                     <div className="h-1 bg-white/40 rounded w-full"></div>
                     <div className="h-1 bg-white/30 rounded w-3/4"></div>
                     <div className="h-1 bg-white/20 rounded w-1/2"></div>
                   </div>
-                  
+
                   {/* App Icons */}
                   <div className="grid grid-cols-3 gap-1 mt-4">
                     {[...Array(6)].map((_, i) => (
-                      <div key={i} className="w-3 h-3 bg-white/25 rounded-sm"></div>
+                      <div
+                        key={i}
+                        className="w-3 h-3 bg-white/25 rounded-sm"
+                      ></div>
                     ))}
                   </div>
                 </div>
