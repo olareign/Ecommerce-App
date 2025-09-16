@@ -1,22 +1,8 @@
-"use client";
-
 import { categories } from "@/lib/db";
 import { services } from "@/lib/serviceList";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Footer() {
-  const [expandedSections, setExpandedSections] = useState<
-    Record<string, boolean>
-  >({});
-
-  const toggleSection = (section: string) => {
-    setExpandedSections((prev) => ({
-      ...prev,
-      [section]: !prev[section],
-    }));
-  };
-
   return (
     <footer className="bg-sky-600 text-white">
       <div className="container p-4 md:p-8 lg:p-16 flex flex-col lg:flex-row gap-8">
@@ -59,89 +45,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Mobile Collapsible Sections */}
-        <div className="md:hidden space-y-4">
-          {/* Categories Section - Mobile */}
-          <div className="border-b border-sky-500 pb-4">
-            <button
-              onClick={() => toggleSection("categories")}
-              className="flex items-center justify-between w-full text-left"
-            >
-              <h3 className="text-lg font-semibold">Most Popular Categories</h3>
-              <svg
-                className={`w-5 h-5 transform transition-transform ${
-                  expandedSections.categories ? "rotate-180" : ""
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            {expandedSections.categories && (
-              <ul className="mt-3 space-y-2">
-                {categories.map((category, index) => (
-                  <li key={index}>
-                    <Link
-                      href={`/category/${category.name.toLowerCase().replace(/\s+/g, "-")}`}
-                      className="text-blue-100 hover:text-white transition-colors text-sm"
-                    >
-                      • {category.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-
-          {/* Customer Services Section - Mobile */}
-          <div className="border-b border-sky-500 pb-4">
-            <button
-              onClick={() => toggleSection("services")}
-              className="flex items-center justify-between w-full text-left"
-            >
-              <h3 className="text-lg font-semibold">Customer Services</h3>
-              <svg
-                className={`w-5 h-5 transform transition-transform ${
-                  expandedSections.services ? "rotate-180" : ""
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            {expandedSections.services && (
-              <ul className="mt-3 space-y-2">
-                {services.map((service: string, index) => (
-                  <li key={index}>
-                    <Link
-                      href={`/${service.toLowerCase().replace(/\s+/g, "-")}`}
-                      className="text-blue-100 hover:text-white transition-colors text-sm"
-                    >
-                      • {service}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        </div>
-
-        {/* Desktop Sections */}
-        <div className="hidden md:flex md:flex-row md:justify-between lg:gap-16 flex-1">
+        {/* All Sections - Now visible on all screen sizes */}
+        <div className="flex flex-col md:flex-row md:justify-between lg:gap-16 flex-1 space-y-6 md:space-y-0">
           {/* Categories Column */}
           <div>
             <h3 className="text-xl font-semibold mb-4 pb-2 border-b-2 border-white">

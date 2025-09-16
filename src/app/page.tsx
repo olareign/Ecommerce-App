@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <header className="">
-        <aside className="flex justify-between items-center p-2 bg-gray-200 px-4 md:px-16 text-sm md:block hidden">
+        <aside className="flex justify-between items-center p-2 bg-gray-200 px-4 md:px-16 text-sm hidden md:flex">
           <div>Welcome to worldwide of {SITE_NAME}!</div>
           <ul className="flex gap-2 list-none">
             <li>Deliver to 423651</li>

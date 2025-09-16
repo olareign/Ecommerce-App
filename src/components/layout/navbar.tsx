@@ -34,7 +34,7 @@ export default function Navbar() {
 
           {/* Desktop Menu Icon - Hidden on mobile */}
           <div className="hidden lg:block">
-            <MenuIcon className="bg-gray-100 rounded p-2 mr-2" />
+            <MenuIcon className="" />
           </div>
 
           <span className="text-blue-400 text-2xl md:text-4xl font-semibold">
